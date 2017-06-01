@@ -1,13 +1,13 @@
 #ifndef INPUT_ALPHABET_H
 #define INPUT_ALPHABET_H
 
-#include <map>
+#include <unordered_map>
 
 enum SymbolType {PUSH, LOCAL, POP};
 
 class InputAlphabet {
 
-	std::map <char, SymbolType> symbols;
+	std::unordered_map <char, SymbolType> symbols;
 public:
 	void addSymbol(char s, SymbolType t) { symbols.insert(std::pair <char,SymbolType> (s,t));}
 	void removeSymbol(char s) {symbols.erase(symbols.find(s));}
