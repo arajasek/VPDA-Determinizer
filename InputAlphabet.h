@@ -1,11 +1,11 @@
-#ifndef STACK_ALPHABET_H
-#define STACK_ALPHABET_H
+#ifndef INPUT_ALPHABET_H
+#define INPUT_ALPHABET_H
 
 #include <map>
 
 enum SymbolType {PUSH, LOCAL, POP};
 
-class StackAlphabet {
+class InputAlphabet {
 
 	std::map <char, SymbolType> symbols;
 public:
