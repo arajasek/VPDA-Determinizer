@@ -7,13 +7,12 @@
 #include "InputAlphabet.h"
 
 class NDVPA {
-	unsigned int nextStateId;
 	std::unordered_map <unsigned int, State> states;
 	InputAlphabet alphabet;
 
 public:
 	void setInputAlphabet(InputAlphabet a) {alphabet = a;}
-	void addState(State s) { states.insert(std::pair<unsigned int, State>(nextStateId++, s)); }
+	void addState(unsigned int i, State s) { states.insert(std::pair<unsigned int, State>(i, s)); }
 };
 
 #endif
