@@ -6,6 +6,8 @@
 #include "State.h"
 #include "InputAlphabet.h"
 
+//assumes state id 0 is initial state
+
 class NDVPA {
 	std::unordered_map <unsigned int, State> states;
 	InputAlphabet alphabet;
