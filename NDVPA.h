@@ -13,6 +13,8 @@ class NDVPA {
 public:
 	void setInputAlphabet(InputAlphabet a) {alphabet = a;}
 	void addState(unsigned int i, State s) { states.insert(std::pair<unsigned int, State>(i, s)); }
+	std::unordered_map <unsigned int, State> getStates() { return states;}
+	InputAlphabet getAlphabet() { return alphabet;}
 };
 
 #endif
