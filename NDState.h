@@ -4,7 +4,7 @@
 #include <string>
 #include <unordered_map>
 
-typedef std::pair<unsigned int, char> transition;
+typedef std::pair<unsigned int, char> NDtransition;
 
 
 class NDState {
@@ -12,7 +12,7 @@ class NDState {
 	bool final;
 	std::string name;
 
-	std::unordered_map <char, transition> transitions;
+	std::unordered_map <char, NDtransition> transitions;
 
 public:
 	unsigned int getId() {return id;}
@@ -23,7 +23,7 @@ public:
 	std::string getName() {return name;}
 	void setName(std::string n) {name = n;}
 
-	void addTransition(char c, transition t) { transitions.insert(std::pair<char, transition>(c,t));}
+	void addTransition(char c, NDtransition t) { transitions.insert(std::pair<char, NDtransition>(c,t));}
 };
 
 #endif

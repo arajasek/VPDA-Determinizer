@@ -17,7 +17,7 @@ int main() {
 
 	NDState f0, f1, s0, s1;
 
-	transition t;
+	NDtransition t;
 
 	t.first = 0;
 	t.second = 'A';
