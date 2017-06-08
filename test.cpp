@@ -1,6 +1,7 @@
 #include <iostream>
 
 #include "NDVPA.h"
+#include "DVPA.h"
 
 int main() {
 	NDVPA automaton;
@@ -14,7 +15,7 @@ int main() {
 	alpha.addSymbol('e', POP);
 	alpha.addSymbol('f', POP);
 
-	State f0, f1, s0, s1;
+	NDState f0, f1, s0, s1;
 
 	transition t;
 

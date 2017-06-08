@@ -1,5 +1,5 @@
-#ifndef STATE_H
-#define STATE_H
+#ifndef NDSTATE_H
+#define NDSTATE_H
 
 #include <string>
 #include <unordered_map>
@@ -7,7 +7,7 @@
 typedef std::pair<unsigned int, char> transition;
 
 
-class State {
+class NDState {
 	unsigned int id;
 	bool final;
 	std::string name;

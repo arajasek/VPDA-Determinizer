@@ -3,19 +3,19 @@
 
 #include <unordered_map>
 
-#include "State.h"
+#include "NDState.h"
 #include "InputAlphabet.h"
 
 //assumes state id 0 is initial state
 
 class NDVPA {
-	std::unordered_map <unsigned int, State> states;
+	std::unordered_map <unsigned int, NDState> states;
 	InputAlphabet alphabet;
 
 public:
 	void setInputAlphabet(InputAlphabet a) {alphabet = a;}
-	void addState(unsigned int i, State s) { states.insert(std::pair<unsigned int, State>(i, s)); }
-	std::unordered_map <unsigned int, State> getStates() { return states;}
+	void addState(unsigned int i, NDState s) { states.insert(std::pair<unsigned int, NDState>(i, s)); }
+	std::unordered_map <unsigned int, NDState> getStates() { return states;}
 	InputAlphabet getAlphabet() { return alphabet;}
 };
 
